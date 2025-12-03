@@ -18,7 +18,7 @@ function App() {
 
     try {
       const response = await axios.get(
-        `http://localhost:8080/api/configurations/${configId}`
+        `https://code-rower-software.vercel.app/api/configurations/${configId}`
       );
       console.log(response.data);
       if (response.success === false) {
@@ -89,6 +89,10 @@ function App() {
             <p className="text-sm text-slate-600 leading-relaxed">
               Click the "Submit" button and the configId will be fetched from{" "}
               <h2>http://localhost:8080/api/configurations/{"{id}"}</h2>
+              <h2>
+                https://code-rower-software.vercel.app/api/configurations/
+                {"{id}"}
+              </h2>
             </p>
           </div>
 

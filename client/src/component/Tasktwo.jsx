@@ -19,7 +19,7 @@ export default function TaskTwo() {
 
     try {
       const res = await axios.put(
-        `http://localhost:8080/api/configurations/${configId}`,
+        `https://code-rower-software.vercel.app/api/configurations/${configId}`,
         { remark: remark.trim() }
       );
 
